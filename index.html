@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HELLFORGED - O Chamado</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+    }
+    header a {
+      color: #ff3c00;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    section {
+      min-height: 100vh;
+      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-1 {
+      background: url('https://i.imgur.com/7Pd7cUc.png') no-repeat center center/cover;
+    }
+    .section-2 {
+      background: linear-gradient(to bottom, #111, #000);
+    }
+    .section-3 {
+      background: #0a0a0a;
+    }
+    .section-4 {
+      background: #111;
+    }
+    .section-5 {
+      background: #000;
+      flex-direction: column;
+    }
+    h1, h2 {
+      color: #ff3c00;
+      text-shadow: 0 0 10px #ff3c00;
+    }
+    p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: 2px solid #ff3c00;
+      background: transparent;
+      color: #ff3c00;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .swiper {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 3rem;
+    }
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #ff3c00;
+    }
+    .swiper-slide p {
+      margin-top: 1rem;
+    }
+    footer {
+      padding: 2rem;
+      background: #000;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff3c00;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bg-audio" autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/25/audio_4fa9c8a527.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <a href="https://hellforged.gitbook.io/hellforged.xyz" target="_blank">Roadmap</a>
+    <a href="https://x.com/hellforged1" target="_blank">X Hellforged</a>
+    <a href="https://x.com/Raelcrypto" target="_blank">X Fundador</a>
+    <a href="https://t.me/+RHrNv0R14yNmMmIx" target="_blank">Telegram</a>
+    <a href="https://hl.fund/hellforged-dao" target="_blank">DAO Hyperliquid</a>
+  </header>
+
+  <section class="section-1">
+    <h1>Bem-vindo à Forja</h1>
+    <p>Em 24 de maio, o inferno se abre. E apenas os marcados entrarão.</p>
+    <a href="#lore" class="cta-button">Desça para o Chamado</a>
+  </section>
+
+  <section class="section-2" id="lore">
+    <h2>O Chamado</h2>
+    <p>HELLFORGED não é apenas uma coleção. É um pacto selado com fogo. Cada NFT é uma marca espiritual, forjada com o sangue de quem ousa acreditar no impossível.</p>
+  </section>
+
+  <section class="section-3">
+    <h2>O Pacto</h2>
+    <p>Ser forjado é renunciar à fraqueza. É caminhar de cabeça erguida em direção ao abismo, sabendo que você não está só. Você foi escolhido. Você é HELLFORGED.</p>
+  </section>
+
+  <section class="section-4">
+    <h2>Prepare-se</h2>
+    <p>Mint: 24/05 na Drip. Supply limitado. Recompensas reais. Acesso ao DAO. Poder compartilhado.</p>
+    <a href="https://drip.trade/hellforged" target="_blank" class="cta-button">Entrar no Inferno</a>
+  </section>
+
+  <section class="section-5">
+    <h2>1/1 Lendários</h2>
+    <p>Essas peças são únicas, forjadas com poder absoluto. Guardiões do inferno e heróis esquecidos — você verá apenas uma vez.</p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://i.imgur.com/VKnQwLw.png" alt="Lendário 1" />
+          <p><strong>Inferno Herdeiro</strong><br>Primeiro a ser marcado pela chama eterna. Seu olhar incendeia dúvidas, sua presença sela destinos.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.imgur.com/8yNaxEH.png" alt="Lendário 2" />
+          <p><strong>Guardiã da Verdade</strong><br>Portadora do conhecimento proibido. O fogo dela queima mentiras e exibe a luz que os fracos temem.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.imgur.com/6vF1kuJ.png" alt="Lendário 3" />
+          <p><strong>Julgador das Sombras</strong><br>Ele pesa os pecados com a balança de almas. Não julga intenções — apenas consequências.</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Siga-nos: 
+      <a href="https://x.com/hellforged1" target="_blank">X</a> | 
+      <a href="https://t.me/+RHrNv0R14yNmMmIx" target="_blank">Telegram</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
